@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Add | Online Calculator</title>
+  </head>
+  <body>
+    <h1>Calculate Add</h1>
+    <p><%= @number1 %> <%= @operator %> <%= @number2 %> = <%= @result %></p>
+    <form action="/" method="post">
+      <input type="hidden" name="final_result" value="<%= @result %>">
+      <button type="submit" name="action" value="back">Back</button>
+      <button type="submit" name="action" value="save">Save</button>
+    </form>
+  </body>
+</html>
